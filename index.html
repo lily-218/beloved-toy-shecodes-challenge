@@ -51,19 +51,20 @@
       }
 
       .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto;
+        display: flex;
+        justify-content: center;
+        grid-template-columns: repeat (3, 25%);
         gap: 10px;
         background-color: antiquewhite;
         padding: 10px;
-        max-width: 100%;
+        max-width: 75%;
         margin: 0 auto;
-        object-fit: contain;
       }
 
       .grid-container img {
         border: solid 10px white;
-        max-width: 400px;
+        width: 100%;
+        height: auto;
         display: block;
         margin: 0 auto;
       }
@@ -107,11 +108,7 @@
         class="mainpic"
         src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/257/original/s-l1200.jpg?1748978060s"
       />
-      <p class="description">
-        It was Christmas Eve, circa 1995. I was around 7 years old, and I was
-        too excited to sleep. Tomorrow was Christmas, and I couldn't stop
-        thinking about what I would get from Father Christmas this year.
-      </p>
+
       <div class="grid-container">
         <div>
           <img
@@ -132,6 +129,13 @@
           />
         </div>
       </div>
+    </div>
+    <div class="description">
+      <p>
+        It was Christmas Eve, circa 1995. I was around 7 years old, and I was
+        too excited to sleep. Tomorrow was Christmas, and I couldn't stop
+        thinking about what I would get from Father Christmas this year.
+      </p>
     </div>
     <div class="watchbuild">
       <h3>Watch the mansion come to life...</h3>
