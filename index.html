@@ -147,6 +147,14 @@
         text-align: center;
         margin: 30px auto;
       }
+      a {
+        text-decoration: none;
+        color: #ad6d9c;
+        font-weight: bold;
+      }
+      a:hover {
+        color: #dc4e8e;
+      }
     </style>
   </head>
   <body>
@@ -240,8 +248,13 @@
       <button class="infoButton">Learn more about playmobil products</button>
       <footer>
         This page was built using HTML, CSS and Javascript by
-        <a href="https://www.shecodes.io/graduates/149078-lily-schroder"></a>
-        Lily Schroder and is on GitHub.
+        <a href="https://www.shecodes.io/graduates/149078-lily-schroder">
+          Lily Schroder</a
+        >
+        and is on
+        <a href="https://github.com/lily-218/beloved-toy-shecodes-challenge"
+          >GitHub</a
+        >.
       </footer>
     </div>
   </body>
@@ -252,7 +265,11 @@
       let age = prompt("How old is the child you wish to buy Playmobil for?");
 
       if (age < 3) {
-        alert("Playmobil is only suitable for children over 3 years of age.");
+        alert(
+          "Thank you, " +
+            name +
+            "! ⚠️ Please be aware that Playmobil is only suitable for children aged 3 years and older ⚠️. We will be in touch with more info soon!"
+        );
       } else {
         alert(
           "Thank you, " + name + "! We'll be in with more Playmobil info soon!"
