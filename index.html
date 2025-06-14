@@ -56,8 +56,8 @@
       .mainpic {
         grid-area: 1 / 1 / 2 / 2;
         border: solid 7px white;
-
         border-radius: 4px;
+        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.2);
       }
       .para-1 {
         grid-area: 1 / 2 / 2 / 3;
@@ -69,12 +69,14 @@
         grid-area: 2 / 2 / 3 / 3;
         border: solid 7px white;
         border-radius: 4px;
+        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
       }
       .mansion-detail2 {
         grid-area: 3 / 1 / 4 / 2;
 
         border: solid 7px white;
         border-radius: 4px;
+        box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.2);
       }
       .para-3 {
         grid-area: 3 / 2 / 4 / 3;
@@ -123,9 +125,20 @@
         font-size: 24px;
         padding: 10px;
         border-radius: 30px;
-        background-color: #dc4e8e;
+        background: linear-gradient(
+          360deg,
+          rgb(220, 78, 142) 0%,
+          rgb(202, 9, 118) 100%
+        );
         border-color: #dc4e8e;
         color: white;
+        box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      button:hover {
+        background: #9c3280;
+        border-color: #9c3280;
+        color: white;
+        cursor: pointer;
       }
       footer {
         font-family: "Edu SA Hand", cursive;
